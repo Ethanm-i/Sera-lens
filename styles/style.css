@@ -12,18 +12,19 @@ header{
     color: white;
     padding: 16px;
     justify-content: space-between;
+}
 
-    .img-logo{
-        display: flex;
-        width: 130px;
-        height: 130px;
-        object-fit: cover;
-    }
-    h1{
-        font-size: 40px;
-        position: absolute;
-        left: 170px;
-    }
+.img-logo{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+header h1{
+    font-size: 40px;
+    position: absolute;
+    left: 170px;
 }
 
 /* #lightmode{
@@ -45,49 +46,50 @@ nav a{
     background-color: rgb(222, 222, 227);
     padding:370px 32px;
     text-align: left;
-    h2{
-        font-size: 35px;
-        position:absolute;
-        top: 200px;
-        left: 100px;
-    }
+}
 
-    p{
-        padding: 70px 70px;
-        position: absolute;
-        top: 330px;
-        left: 80px;
-        max-width: 600px;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        line-height: 1.8;
-        font-size: 19px;
-    }
+#home h2{
+    font-size: 35px;
+    position:absolute;
+    top: 200px;
+    left: 100px;
+}
 
-    #imag{
-        display: block;
-        padding: 0px;
-        max-width: 50%;
-        border-radius: 10px;
-        position: absolute; 
-        top: 200px;
-        left: 920px;
-    }
+#home p{
+    padding: 70px 70px;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    line-height: 1.8;
+    font-size: 19px;
+}
 
-    #Book{
-        background-color: rgba(44, 138, 89,0.6);
-        padding: 8px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        font-size: 30px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: bold;
-        border: none;
-        position:absolute;
-        top: 800px;
-        left: 360px;
-        cursor: pointer;
-    }
+#imag{
+    display: block;
+    padding: 0px;
+    max-width: 50%;
+    border-radius: 10px;
+    position: absolute; 
+    top: 200px;
+    left: 920px;
+}
+
+#Book{
+    background-color: rgba(44, 138, 89,0.6);
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border: none;
+    position:absolute;
+    top: 800px;
+    left: 360px;
+    cursor: pointer;
 }
 
 
@@ -121,45 +123,47 @@ footer{
     padding: 16px;
     background-color: rgb(222, 222, 227);
 
-    a{
-        position: absolute;
-        right: 858px;
-        text-decoration: dashed;
-    }
+}
+
+footer a{
+    position: absolute;
+    right: 858px;
+    text-decoration: dashed;
 }
 
 #services{
     background-color:rgb(222, 222, 227);
     padding: 435px;
-
-    h2{
-        position: absolute;
-        top: 200px;
-        left: 100px;
-    }
-
-    nav{
-        max-width: 700px;
-        text-align: left;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.5);
-        position: absolute;
-        top:300px;
-        left: 100px;
-        
-    }
-
-    img{
-        display: block;
-        margin: 0;
-        max-width: 40%;
-        position: absolute;
-        top: 195px;
-        left: 58%;
-        border-radius: 10px;
-    }
 }
+
+#services h2{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#services nav{
+    max-width: 700px;
+    text-align: left;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    position: absolute;
+    top:300px;
+    left: 100px;
+    
+}
+
+#Simage{
+    display: block;
+    margin: 0;
+    max-width: 40%;
+    position: absolute;
+    top: 195px;
+    left: 58%;
+    border-radius: 10px;
+}
+
 
 
 
