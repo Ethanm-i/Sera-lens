@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 1, 1);
+    font-family: Arial, sans-serif
+}
+
+header{
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 16px;
+    justify-content: space-between;
+
+    .img-logo{
+        display: flex;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
+    h1{
+        font-size: 40px;
+        position: absolute;
+        left: 170px;
+    }
+}
+
+/* #lightmode{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: red;
+} */
+nav{
+    display: inline-flex;
+}
+nav a{
+    color:white;
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: dashed;
+    font-size: 20px;
+}
+#home{
+    background-color: rgb(222, 222, 227);
+    padding:370px 32px;
+    text-align: left;
+    h2{
+        font-size: 35px;
+        position:absolute;
+        top: 200px;
+        left: 100px;
+    }
+
+    p{
+        padding: 70px 70px;
+        position: absolute;
+        top: 330px;
+        left: 80px;
+        max-width: 600px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        line-height: 1.8;
+        font-size: 19px;
+    }
+
+    #imag{
+        display: block;
+        padding: 0px;
+        max-width: 50%;
+        border-radius: 10px;
+        position: absolute; 
+        top: 200px;
+        left: 920px;
+    }
+
+    #Book{
+        background-color: rgba(44, 138, 89,0.6);
+        padding: 8px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        font-size: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        border: none;
+        position:absolute;
+        top: 800px;
+        left: 360px;
+        cursor: pointer;
+    }
+}
+
+
+/* .image-1{
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center; 
+} */
+
+/* .image-container{
+    position: relative;
+    display: inline-block;
+} */
+
+/* .overlay-text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, 50%); /*centers the text perfecty
+    color: white;
+    font-size: 40;
+    font-weight: bold;
+    background:rgba(0,0,0,0.5);
+    padding:10px;
+    border-radius:5px;
+} */
+
+footer{
+    text-align: center;
+    padding: 16px;
+    background-color: rgb(222, 222, 227);
+
+    a{
+        position: absolute;
+        right: 858px;
+        text-decoration: dashed;
+    }
+}
+
+#services{
+    background-color:rgb(222, 222, 227);
+    padding: 435px;
+
+    h2{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+
+    nav{
+        max-width: 700px;
+        text-align: left;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        position: absolute;
+        top:300px;
+        left: 100px;
+        
+    }
+
+    img{
+        display: block;
+        margin: 0;
+        max-width: 40%;
+        position: absolute;
+        top: 195px;
+        left: 58%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* 
+setting to change the color  */
+/* .done{
+    color: darkseagreen;
+    text-decoration : line-through solid black 2px;
+} */
+
+/* .menu-icon{
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer; /*changes the cursor to a hand when over the menu lines
+}
+
+@media (max-width: 768px){
+    nav a{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(86, 232, 7);
+        padding: 10px 0;
+    }
+
+    nav a.show{
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    
+    nav a{
+        margin: 10px 0;
+    }
+} */
