@@ -131,7 +131,7 @@ footer a{
     text-decoration: none;
 }
 
-#services{
+.services{
     display: flex;
     background-color:rgb(222, 222, 227);
     padding: 435px;
@@ -139,14 +139,14 @@ footer a{
     justify-content: center;
 }
 
-#services h2{
+.services h2{
     transform: translateY(-400px);
     text-align: center;
     font-size: 30px;
 
 }
 
-#services nav{
+.services nav{
     max-width: 700px;
     text-align: left;
     padding: 40px;
@@ -154,17 +154,33 @@ footer a{
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     position:absolute;
     top: 200px;
-    
 }
+
+#order{
+    border:none;
+    background-color: rgb(0, 128, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding:12px;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 700px;
+}
+
 
 .background-image{
     background-image: url(/Images/1.png);
     background-size: cover;
     background-position: center;
     height: 600px;
-    color:white;
+    color:rgb(11, 10, 10);
     display: flex;
+    font-size: 30px;
     align-items:center;
+    font-weight:bold;
     justify-content: center;
 }
 
@@ -242,10 +258,46 @@ address{
   width: 100px;
 }
 
+.send-button{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    padding: 5px;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.send-button:hover{
+    background-color: rgba(2, 130, 2, 0.2);
+}
+
 .contact-page p{
     max-width: 500px;
     transform: translate(100px, -500px);
     align-items: center;
+}
+
+.about-page{
+    background-color:rgb(222, 222, 227);
+    padding:32px;
+    position: relative;
+    line-height: 2;
+}
+.about-page h2, h3, p{
+    transform: translate(900px, 0px);
+}
+
+#AB{
+    align-items: center;
+    max-width: 600px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(900px, 0px);
+}
+
+#DF{
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
