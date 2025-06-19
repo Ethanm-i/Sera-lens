@@ -9,6 +9,50 @@ firstimage.addEventListener("click", () => {
     }
 });
 
+//making the images slide both sides
+const track =document.getElementById("image tracker"); // selecting the image track conatainer by its ID
+
+let isDragging =  false; //currently draggin
+let startX; //starting point
+let scrollLeft; //position of the container before
+
+track.addEventListener("mousedown", (e) =>{
+    isDragging = true;
+    track.classList.add("dragging");
+    startX = e.pageX - track.offsetLeft;
+    scrollleft = track.scrollleft;
+});
+
+track.addEventListener("mouseleave", () =>{
+    isDragging= false;
+    track.classList.remove("dragging");
+});
+
+track.addEventListener("mouseup", (e) =>{
+    isDragging= false;
+    track.classList.remove("dragging");
+});
+
+track.addEventListener("mousemove", (e) => {
+    if(!isDragging) return;
+    e.preventDefault()
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x -startX) *2;
+    track.scrollLeft = scrollLeft - walk;
+});
+
+track.addEventListener("touchstart", (e) =>{
+    startX = e.touches[0].pageX -track.offsetLeft;
+    scrollLeft = track.scrollLeft
+});
+
+track.addEventListener("touchmove", (e) =>{
+    const x  = e.touches[0].pageX - track.offsetLeft;
+    const walk = (x-startX) *2
+    track.scrollLeft = scrollLeft-walk;
+});
+
+
 //make  a slide show for the images
 // const fs = require('fs');
 // const path = require('path');
