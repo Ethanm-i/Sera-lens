@@ -10,47 +10,90 @@ firstimage.addEventListener("click", () => {
 });
 
 //making the images slide both sides
-const track =document.getElementById("image tracker"); // selecting the image track conatainer by its ID
+const scrollContainer = document.getElementById("scrollContainer");
 
-let isDragging =  false; //currently draggin
-let startX; //starting point
-let scrollLeft; //position of the container before
+let isDragging = false;
+let startX;
+let scrollLeft;
 
-track.addEventListener("mousedown", (e) =>{
+scrollContainer.addEventListener("mousedown", (e) => {
     isDragging = true;
-    track.classList.add("dragging");
-    startX = e.pageX - track.offsetLeft;
-    scrollleft = track.scrollleft;
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+    scrollContainer.style.cursor = "grabbing";
 });
 
-track.addEventListener("mouseleave", () =>{
-    isDragging= false;
-    track.classList.remove("dragging");
+scrollContainer.addEventListener("mouseleave", () => {
+    isDragging = false;
+    scrollContainer.style.cursor = "grab";
 });
 
-track.addEventListener("mouseup", (e) =>{
-    isDragging= false;
-    track.classList.remove("dragging");
+scrollContainer.addEventListener("mouseup", () => {
+    isDragging = false;
+    scrollContainer.style.cursor = "grab";
 });
 
-track.addEventListener("mousemove", (e) => {
-    if(!isDragging) return;
-    e.preventDefault()
-    const x = e.pageX - track.offsetLeft;
-    const walk = (x -startX) *2;
-    track.scrollLeft = scrollLeft - walk;
+scrollContainer.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
 });
 
-track.addEventListener("touchstart", (e) =>{
-    startX = e.touches[0].pageX -track.offsetLeft;
-    scrollLeft = track.scrollLeft
+// Touch support
+scrollContainer.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
 });
 
-track.addEventListener("touchmove", (e) =>{
-    const x  = e.touches[0].pageX - track.offsetLeft;
-    const walk = (x-startX) *2
-    track.scrollLeft = scrollLeft-walk;
+scrollContainer.addEventListener("touchmove", (e) => {
+    const x = e.touches[0].pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
 });
+
+// const scrollContainer =document.getElementById("scrollContainer"); // selecting the image track conatainer by its ID
+
+// let isDragging =  false; //currently draggin
+// let startX; //starting point
+// let scrollLeft; //position of the container before
+
+// scrollContainer.addEventListener("mousedown", (e) =>{
+//     isDragging = true;
+//     scrollContainer.classList.add("dragging");
+//     startX = e.pageX - scrollContainer.offsetLeft;
+//     scrollleft = scrollContainer.scrollleft;
+// });
+
+// scrollContainer.addEventListener("mouseleave", () =>{
+//     isDragging= false;
+//     scrollContainer.classList.remove("dragging");
+// });
+
+// scrollContainer.addEventListener("mouseup", (e) =>{
+//     isDragging= false;
+//     scrollContainer.classList.remove("dragging");
+// });
+
+// scrollContainer.addEventListener("mousemove", (e) => {
+//     if(!isDragging) return;
+//     e.preventDefault()
+//     const x = e.pageX - scrollContainer.offsetLeft;
+//     const walk = (x -startX) *2;
+//     scrollContainer.scrollLeft = scrollLeft - walk;
+// });
+
+// scrollContainer.addEventListener("touchstart", (e) =>{
+//     startX = e.touches[0].pageX -scrollContainer.offsetLeft;
+//     scrollLeft = scrollContainer.scrollLeft
+// });
+
+// scrollContainer.addEventListener("touchmove", (e) =>{
+//     const x  = e.touches[0].pageX - scrollContainer.offsetLeft;
+//     const walk = (x-startX) *2
+//     scrollContainer.scrollLeft = scrollLeft-walk;
+// });
 
 
 //make  a slide show for the images

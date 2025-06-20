@@ -5,6 +5,9 @@ body{
     font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     color: rgb(15, 1, 1);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 header{
@@ -80,7 +83,6 @@ nav a{
     top: 50rem;
     transform: translateY(-50%);
     white-space: nowrap;
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 32px;
     cursor: grab;
 }
@@ -88,19 +90,14 @@ nav a{
 .image-track .image{
     width: 40vmin;
     height: 56vmin;
-    object-fit: cover;
+    object-fit: cover; 
     object-position: center;
+    flex-shrink: 0;
 }
 
 .image-track{
-    display: flex;
-    gap:4vmin;
-    position:absolute;
-    left:0%;
-    top:50rem;
-    transform: translate(0%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    padding:32px;
+    display:inline-flex;
+    gap:30px ;
 }
 
 #imag{
@@ -195,7 +192,7 @@ footer p{
 }
 
 .services h2{
-    transform: translate(400px, -870px);
+    transform: translate(350px, -970px);
     text-align: center;
     font-size: 35px;
 }
@@ -369,22 +366,26 @@ address{
 
 .about-page{
     background-color:rgb(222, 222, 227);
-    padding:32px;
+    padding:12px;
     position: relative;
     line-height: 2;
 }
-.about-page #a, #b, #d, .c{
+.about-page #a, #b, #d, .parah{
     margin-left: 500px;
     transform: translate(600px, 0px);
 }
-
-.about-page .c{
-    max-width: 600px;
+#d, #a, #b{
+    font-size: 25px;
+}
+.about-page .parah{
+    max-width: 700px;
     align-items: center;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .list{
+    font-size: 18px;
     max-width: 500px;
     padding: 12px;
     text-align: left;
@@ -393,21 +394,24 @@ address{
 }
 
 .about-image{
-    max-width: 800px;
+    display: flex;
+    max-width: 900px;
     margin: 30px;
-    transform: translate(100px, -500px);
+    transform: translate(50px, -700px);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.founder-about{
+.founder{
+    display: flex;
     font-size: 25px;
     position: absolute;
-    top:650px;
+    top:750px;
     left:300px;
 }
 
 .circle{
+    display: flex;
     width:200px;
     height: 200px;
     background-image: url(/Images/1.png);
@@ -415,15 +419,21 @@ address{
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    top:730px;
+    top:890px;
     left: 250px;
 }
 
-.founder-background{
-    max-width: 600px;
-    transform: translate(540px, -350px);
+.founder-infro{
+    display: flex;
+    max-width: 800px;
+    font-size: 18px;
+    transform: translate(540px, -450px);
 }
+ f
 
+@media (max-width: 600px) {
+
+}
 /* 
 setting to change the color  */
 /* .done{
