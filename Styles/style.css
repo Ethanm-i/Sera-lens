@@ -519,6 +519,7 @@ address{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: bold;
         border: none;
+        color:white;
         position:absolute;
         top:50rem;
         left: 120px;
