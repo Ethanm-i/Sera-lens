@@ -511,14 +511,6 @@ address{
     }
 
     .Book{
-        background-color: rgba(2, 69, 2, 0.6);
-        padding: 12px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        font-size: 30px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: bold;
-        border: none;
         color:white;
         position:absolute;
         top:50rem;
@@ -527,6 +519,11 @@ address{
     
     #Book:active{
         background-color: rgb(3, 3, 95);
+    }
+
+    footer p{
+        display: flex;
+        transform: translate(5px, 0px);
     }
 }
 /* 
