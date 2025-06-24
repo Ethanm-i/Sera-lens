@@ -397,7 +397,7 @@ address{
     display: flex;
     max-width: 56rem;
     margin: 30px;
-    transform: translate(50px, -700px);
+    transform: translate(50px, -650px);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -427,7 +427,7 @@ address{
     display: flex;
     max-width: 800px;
     font-size: 18px;
-    transform: translate(540px, -450px);
+    transform: translate(540px, -360px);
 }
 
 /*Mobile versiion*/
